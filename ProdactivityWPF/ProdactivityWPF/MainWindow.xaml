@@ -1,0 +1,14 @@
+﻿<Window x:Class="ProdactivityWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProdactivityWPF"
+        mc:Ignorable="d"
+        Title="Prodactivity" Height="350" Width="525.994">
+    <Grid>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="263" Margin="10,46,0,0" VerticalAlignment="Top" Width="497"/>
+        <Button x:Name="OpenFile" Content="Open Prodactavity report file" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="497" Click="OpenFile_Click"/>
+
+    </Grid>
+</Window>
