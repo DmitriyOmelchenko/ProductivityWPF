@@ -13,7 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Microsoft.Win32;
+
 using System.IO;
 namespace ProdactivityWPF
 {
@@ -66,7 +66,7 @@ namespace ProdactivityWPF
                     
 
                 }
-                catch (Exception ex)
+                catch (FormatException ex)
                 {
 
                     MessageBox.Show("Error-" + ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Warning);
@@ -77,5 +77,7 @@ namespace ProdactivityWPF
             
 
         }
+
+       
     }
 }

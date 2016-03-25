@@ -7,8 +7,13 @@
         mc:Ignorable="d"
         Title="Prodactivity" Height="350" Width="525.994">
     <Grid>
-        <ListBox x:Name="Result" HorizontalAlignment="Left" Height="263" Margin="10,46,0,0" VerticalAlignment="Top" Width="497"/>
-        <Button x:Name="OpenFile" Content="Open Prodactavity report file" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="497" Click="OpenFile_Click"/>
 
+        
+        <Grid.RowDefinitions>
+            <RowDefinition  Height="45"> </RowDefinition>
+            <RowDefinition  Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Button x:Name="OpenFile" Margin="10"  Grid.Row="0" Click="OpenFile_Click">Open productivity report file</Button>    
+        <ListBox x:Name="Result" Grid.Row="1" HorizontalAlignment="Stretch"></ListBox>
     </Grid>
 </Window>
